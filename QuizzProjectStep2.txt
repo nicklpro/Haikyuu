@@ -1,0 +1,49 @@
+//Quiz
+#include <iostream>
+#include "Quizz.hpp"
+using namespace std;
+
+int main(){
+	
+	
+	//prwto bhma
+	int size;
+	struct Quizz array[size];	//initalization of array type struct Quizz
+	fill(array,10);			//use of fill function
+	
+	
+	//deutero bhma	
+	//Bonus#1. You get 3 lives before the quizz ends and you perish in Hell
+	//the user has to input an answer using a for probably
+	for(int i=0;i<size;i++){
+		cout<<name[size].question<<endl;	//show question
+		cout<<"Please answer question "<<i<<" :";	//prompt the user to answer		
+		cin>>name[size].answer[i];				
+	}//end for
+
+	
+	//calculate the final score using do-while into a for	
+	int sum=0,x=50,life=3;
+	for(i=0;i<size;i++){
+		if(name[].answer[i]==name[].correctAns){
+			sum=sum+x;
+		}
+		else{
+			life--;
+		}//end if-else
+		if(life==0){
+			cout<<"You Died(sad Dark Souls music)";
+			break;
+		}
+	}/*end for*/ cout<<"You finished with "<<sum<<" points!"<<endl;
+	
+		
+		
+		
+
+	
+	
+	
+	
+	return 0;
+}//end main
